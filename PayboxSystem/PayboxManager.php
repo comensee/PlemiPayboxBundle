@@ -51,6 +51,21 @@ class PayboxManager
     }
 
     /**
+     * Creates PayboxDirectRequest instance.
+     *
+     * @param array $data optional PBX_ values
+     *
+     * @return PayboxRequest
+     */
+    public function createDirectRequest(array $data = array())
+    {
+        $request = $this->container->get('plemi_paybox.direct_request');
+        $request->setDatas($data);
+
+        return $request;
+    }
+
+    /**
      * Creates PayboxResponse instance from Symfony request.
      *
      * @param Request $request request

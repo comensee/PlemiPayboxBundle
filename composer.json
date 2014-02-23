@@ -6,7 +6,7 @@
     "authors": [
         {
             "name": "Plemi",
-            "homepage": "https://www.plemi.com"
+            "homepage": "http://www.plemi.com"
         },
         {
             "name": "Symfony Community",
@@ -14,7 +14,7 @@
         }
     ],
     "require": {
-        "symfony/framework-bundle": ">=2.1,<2.4-dev"
+        "symfony/framework-bundle": "2.*"
     },
    "require-dev": {
         "phpunit/phpunit": "3.7.*"
@@ -24,10 +24,5 @@
             "Plemi\\Bundle\\PayboxBundle": ""
         }
     },
-    "target-dir": "Plemi/Bundle/PayboxBundle",
-    "extra": {
-        "branch-alias": {
-            "dev-master": "1.0-dev"
-        }
-    }
+    "target-dir": "Plemi/Bundle/PayboxBundle"
 }

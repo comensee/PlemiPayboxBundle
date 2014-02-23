@@ -53,7 +53,6 @@ class CurlTransport extends AbstractTransport implements TransportInterface
         $this->checkEndpoint();
 
         $datas = $request->checkAndGetDatas();
-        $datas['PBX_MODE'] = 1;
 
         $ch = curl_init();
 
