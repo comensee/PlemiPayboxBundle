@@ -20,7 +20,7 @@ use Plemi\Bundle\PayboxBundle\Transport\TransportInterface;
  *
  * @author Erwann MEST <erwann.mest@plemi.org>
  */
-class PayboxRequest
+class PayboxDirectRequest extends PayboxRequest
 {
     /**
      * Paybox Request Variables in array.
